@@ -10,7 +10,7 @@ public class Client {
 
             //  Socket to talk to server
             ZMQ.Socket socket = context.createSocket(SocketType.REQ);
-            socket.connect("tcp://localhost:5555");
+            socket.connect("tcp://128.199.174.204:5555");
 
             for (int requestNbr = 0; requestNbr != 10; requestNbr++) {
                 String request = "Hello";
